@@ -1,0 +1,199 @@
+{
+	"id": "a29d3c12-c749-45ef-8145-d387afb58478",
+	"name": "test task JSONPlaceholder",
+	"timestamp": "2025-06-05T17:42:57.877Z",
+	"collection_id": "35969992-ba14593f-8d1b-4746-8fa2-ef2b98e0f14b",
+	"folder_id": 0,
+	"environment_id": "35969992-2a4543f1-6b12-445f-985f-5379e0766e73",
+	"totalPass": 17,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-06-05T17:42:56.491Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a2f43e75-63d9-4a38-93d8-9cbd82294cd5",
+			"name": "get a list of posts",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 156,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is application/json": true,
+				"Response time is less than 300ms": true,
+				"Response body is an array": true,
+				"Each post in the array has correct structure and types": true,
+				"Check status code 404 for not existing endpoint": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 300ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Each post in the array has correct structure and types": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check status code 404 for not existing endpoint": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				156
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is application/json": true,
+					"Response time is less than 300ms": true,
+					"Response body is an array": true,
+					"Each post in the array has correct structure and types": true,
+					"Check status code 404 for not existing endpoint": true
+				}
+			]
+		},
+		{
+			"id": "a402d31a-8201-4538-87c8-baaef0f99c71",
+			"name": "create a post",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 520,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response time is less than 2000ms": true,
+				"Content-Type is application/json": true,
+				"Response body has required properties": true,
+				"Property types are correct": true,
+				"Check status code 404 for not existing endpoint": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body has required properties": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Property types are correct": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check status code 404 for not existing endpoint": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				520
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response time is less than 2000ms": true,
+					"Content-Type is application/json": true,
+					"Response body has required properties": true,
+					"Property types are correct": true,
+					"Check status code 404 for not existing endpoint": true
+				}
+			]
+		},
+		{
+			"id": "06b7ee75-ba07-4900-b375-a713fe523039",
+			"name": "delete a post",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 191,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 600ms": true,
+				"Response headers contain content-type": true,
+				"Status code is not 404 (Not Found)": true,
+				"Response body is empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 600ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response headers contain content-type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is not 404 (Not Found)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 600ms": true,
+					"Response headers contain content-type": true,
+					"Status code is not 404 (Not Found)": true,
+					"Response body is empty": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 867,
+	"collection": {
+		"requests": [
+			{
+				"id": "a2f43e75-63d9-4a38-93d8-9cbd82294cd5",
+				"method": "GET"
+			},
+			{
+				"id": "a402d31a-8201-4538-87c8-baaef0f99c71",
+				"method": "POST"
+			},
+			{
+				"id": "06b7ee75-ba07-4900-b375-a713fe523039",
+				"method": "DELETE"
+			}
+		]
+	}
+}
